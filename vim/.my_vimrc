@@ -1,0 +1,42 @@
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+# Author	: J B Teja
+# Source	: man page, github & stackoverflow
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+" Vundle
+ set nocompatible              " be iMproved, required
+ filetype off                  " required
+
+ " set the runtime path to include Vundle and initialize
+  set rtp+=/home/jteja/.vim/bundle//Vundle.vim
+  call vundle#begin('/home/jbteja/.vim/bundle/')
+
+ " let Vundle manage Vundle, required
+  Plugin 'VundleVim/Vundle.vim'
+
+ " Plugins
+  Plugin 'vimwiki/vimwiki'
+  Plugin 'vim-syntastic/syntastic'
+  Plugin 'vim-scripts/indentpython.vim'
+  Plugin 'valloric/youcompleteme'
+  Plugin 'tpope/vim-fugitive'
+  Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+
+ " All of your Plugins must be added before the following line
+  call vundle#end()            " required
+  filetype plugin indent on    " required
+
+"
+ " Split navigations
+ nnoremap <C-J> <C-W><C-J>
+ nnoremap <C-K> <C-W><C-K>
+ nnoremap <C-L> <C-W><C-L>
+ nnoremap <C-H> <C-W><C-H>
+
+" Vim Wiki
+ let g:vimwiki_list = [{'path': '/mnt/c/Users/jbteja/Documents/myWiki/Index.md',
+                       \ 'syntax': 'markdown', 'ext': '.md'}]
