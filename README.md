@@ -14,7 +14,8 @@ Configurations and Dot files.
 # VIM Config
   * Source the config file by adding the below to local .vimrc or /etc/vim/vimrc. 
   * Update the path of .my_vimrc accordingly.
-  ```
+  
+  ```sh
   " Source a configuration file if available
   if filereadable("/home/jbteja/.my_vimrc")
     source /home/jbteja/.my_vimrc
