@@ -1,9 +1,8 @@
-# config-files
+# Config-files
 Configurations and Dot files.
-<br>
 
 # Tmux Config
-  * Tested the configuration on below OS with default tmux instalation:
+  * Tested the configuration on below OS with default tmux installation:
     - CentOS 6.10
     - CentOS 7.9
     - CentOS 8.2
@@ -11,14 +10,13 @@ Configurations and Dot files.
     - Amazon Linux 2
     - Ubuntu 16.04 LTS
     - Ubuntu 18.04 LTS
-<br>
 
-# VIM Conig
-  * Source the config file by adding the below to .vimrc. 
+# VIM Config
+  * Source the config file by adding the below to local .vimrc or /etc/vim/vimrc. 
   * Update the path of .my_vimrc accordingly.
   ```
   " Source a configuration file if available
-  if filereadable("/home/jbteja/.bt_vimrc")
+  if filereadable("/home/jbteja/.my_vimrc")
     source /home/jbteja/.my_vimrc
   endif
   ```
